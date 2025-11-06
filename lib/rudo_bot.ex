@@ -25,7 +25,7 @@ defmodule RudoBot do
         Api.create_message(msg.channel_id, Weather.run(city))
 
       ["!convert", amount, from, to] ->
-        Api.create_message(msg.channel_id, Converter.run(amount, from, to))
+        Api.create_message(msg.channel_id, Convert.run(amount, from, to))
 
       ["!translate", from, to | text_parts] ->
         text = Enum.join(text_parts, " ")
