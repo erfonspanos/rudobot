@@ -22,5 +22,5 @@ rudobot-*.tar
 # Temporary files, for example, from tests.
 /tmp/
 
-#.gitignore
-.env
+# Ignorar config local com token
+config/config.exs
